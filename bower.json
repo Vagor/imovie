@@ -1,0 +1,24 @@
+{
+  "name": "movie",
+  "version": "0.0.0",
+  "authors": [
+    "zcc0810 <772333174@qq.com>"
+  ],
+  "description": "imovie",
+  "keywords": [
+    "imovie"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.2"
+  }
+}
