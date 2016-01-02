@@ -12,7 +12,9 @@ mongoose.connect('mongodb://localhost/imooc')
 
 app.set('views','./views/pages')
 app.set('view engine','jade')
-app.use(bodyParser.urlencoded({ extended: false }))//将表单数据格式化
+// app.use(express.bodyParser())
+// app.use(bodyParser.urlencoded())
+app.use(bodyParser.urlencoded({ extended: true }))//将表单数据格式化
 app.use(express.static(path.join(__dirname,'bower_components')))//告诉浏览器请求样式就到此文件夹查找，dirname就是当前目录
 app.listen(port)
 app.locals.moment = require('moment')
